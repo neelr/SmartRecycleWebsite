@@ -1,7 +1,65 @@
-h1 {
-	text-align: center;
-	color: rgb(200,0,0);
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Inconsolata|KoHo|Lobster|Major+Mono+Display|Roboto+Condensed|Varela+Round');
+.homebar {
+	background: #36802d;
+	overflow: hidden;
+	border-radius: 10px;
 }
-p {
-	text-align: right;
+.baroption {
+	font-stretch: condensed;
+	padding: 14px 20px;
+	float: left;
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+	font-family: 'Roboto Condensed', monospace;
+}
+.baroption:hover {
+	background: #77ab59;
+}
+.logobar {
+	font-stretch: condensed;
+	padding: 10px 10px;
+	float: left;
+	text-decoration: none;
+	color:#97aa8d;
+	font-size: 20px;
+	font-family: 'Courier New', Courier, monospace;
+}
+.logo {
+	height: 35px;
+	float: left;
+	overflow: auto;
+}
+body {
+	background: #c9df89;
+}
+.large {
+	background: #f0f7da;
+	padding: 30px 20px;
+	left: 10%;
+	text-align: center;
+	font-family: 'Fjalla One', sans-serif;
+	color: black;
+}
+.norm {
+	font-family: 'Varela Round', sans-serif;
+	margin: 10px 10px;
+	border-radius: 25px;
+	padding: 10px 10px;
+	background: #77ab59;
+	width: 600px;
+	align-items: center;
+	position: relative;
+	left: 27%;
+}
+.supp {
+	font-family: 'Varela Round', sans-serif;
+	margin: 10px 10px;
+	border-radius: 25px;
+	padding: 10px 10px;
+	background: #77ab59;
+	width: 600px;
+	align-items: center;
+	position: relative;
+	left: 26%;
 }
