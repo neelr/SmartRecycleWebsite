@@ -48,9 +48,7 @@ body {
 	padding: 10px 10px;
 	background: #77ab59;
 	width: 600px;
-	align-items: center;
-	position: relative;
-	left: 27%;
+	display: inline-block;
 }
 .supp {
 	font-family: 'Varela Round', sans-serif;
