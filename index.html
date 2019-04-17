@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>RecycleSmart</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
 		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 		<link rel="icon" href="icon.png">
   </head>
@@ -15,16 +15,16 @@
 					<img src="icon.png"  height="40">
 				</a>
 
-				<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+				<a id="nav-toggle" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
 				</a>
 			</div>
 
-			<div class="navbar-menu">
+			<div class="navbar-menu" id="navMenu">
 				<div class="navbar-start">
-					<a class="navbar-item" href="index.html">
+					<a class="navbar-item is-active" href="index.html">
 						Home
 					</a>
 
@@ -41,7 +41,7 @@
 				</div>
 			</div>
 		</nav>
-		<div class="hero is-primary">
+		<div class="hero is-success">
 			<div class="hero-body">
 				<div class="container has-text-center">
 					<h1 class="title">What is RecycleSmart?</h1>
@@ -127,5 +127,14 @@
 				Creative Commons Attribution-ShareAlike 3.0 Unported License.</p>
 				</div>
 		</footer>
+		<script>
+			(function() {
+			var burger = document.querySelector('#nav-toggle');
+			var menu = document.querySelector('.navbar-menu');
+			burger.addEventListener('click', function() {
+					burger.classList.toggle('is-active');
+					menu.classList.toggle('is-active');
+			});
+	})();</script>
 	</body>
 </html>
